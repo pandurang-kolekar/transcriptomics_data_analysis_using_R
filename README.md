@@ -39,8 +39,7 @@ Run RStudio and execute following commands on R Console to install the [Biocondu
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 BiocManager::install(version = "3.15")
-BiocManager::install("DESeq2")
-BiocManager::install("edgeR")
+BiocManager::install(c("DESeq2", "edgeR"))
 ```
 
 ### Test installations
