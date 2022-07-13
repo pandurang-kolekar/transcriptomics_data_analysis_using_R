@@ -63,7 +63,7 @@ Himes BE, Jiang X, Wagner P, Hu R, Wang Q, et al. (2014) *RNA-Seq Transcriptome 
 
 Authors used RNASeq experiment to characterize the human airway smooth muscle (HASM) transcriptome at baseline and under dexamethasone (DEX) asthma treatment. RNASeq data from HASM cell lines with untreated (n=4) and treated (n=4) samples were processed through Bioinformatics pipeline as described in the paper to generate read count matrix across genes and samples.
 
-The count matrix data set can be downloaded either in the form of Bioconductor [*airway*](https://bioconductor.org/packages/release/data/experiment/vignettes/airway/inst/doc/airway.html) package or can also be downloaded as a tab-delimited file from [here](https://drive.google.com/drive/folders/1eosGdWh0zzEXLg1v61BpMQAk60YpoYJ7?usp=sharing) (Download both the files in Google drive, [airway.tsv](https://drive.google.com/file/d/11dujOxITpI3KHujyBTojfNBueLXbAIzk/view?usp=sharing) and [airway_colData.tsv](https://drive.google.com/file/d/1Vji3F2M4VUIoQOV_4_yeRGdPNhIjU1sJ/view?usp=sharing)).
+The count matrix data set can be downloaded either in the form of Bioconductor [*airway*](https://bioconductor.org/packages/release/data/experiment/vignettes/airway/inst/doc/airway.html) package. 
 
 ```{r eval=FALSE, include=TRUE}
 BiocManager::install("airway")
@@ -74,3 +74,4 @@ str(assay(airway))
 colData(airway)
 ```
 
+Data set can also be downloaded as tab-delimited files from [here](https://drive.google.com/drive/folders/1eosGdWh0zzEXLg1v61BpMQAk60YpoYJ7?usp=sharing) (Download both the files from Google drive, [airway.tsv](https://drive.google.com/file/d/11dujOxITpI3KHujyBTojfNBueLXbAIzk/view?usp=sharing) and [airway_colData.tsv](https://drive.google.com/file/d/1Vji3F2M4VUIoQOV_4_yeRGdPNhIjU1sJ/view?usp=sharing)).
