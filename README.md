@@ -25,29 +25,33 @@ First install [R (version 4.2.1)](https://cloud.r-project.org/) and then [RStudi
 
 ### Install R packages
 
+Run RStudio and execute following commands on R Console to install R packages.
 [Tidyverse](https://www.tidyverse.org/) is a collection of standard R packages that are widely used in data transformation and visualization.
 
 ```{r eval=FALSE, include=TRUE}
-install.packages("tidyverse", dependencies = TRUE)
+install.packages(c("tidyverse", "pheatmap"), dependencies = TRUE)
 ```
 
 ### Install Bioconductor
 
-Run RStudio and execute following commands on R Console to install the [Bioconductor](https://bioconductor.org/install/) and [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) package.
+Run RStudio and execute following commands on R Console to install the [Bioconductor](https://bioconductor.org/install/), [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) and related packages.
 
 ```{r eval=FALSE, include=TRUE}
 if (!require("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 BiocManager::install(version = "3.15")
-BiocManager::install(c("DESeq2", "edgeR"))
+BiocManager::install(c("DESeq2", "edgeR", "org.Hs.eg.db", "EnhancedVolcano"))
 ```
 
 ### Test installations
 
 ```{r eval=FALSE, include=TRUE}
 library(tidyverse)
+library(pheatmap)
 library(DESeq2)
 library(edgeR)
+library(org.Hs.eg.db)
+library(EnhancedVolcano)
 ```
 
 ## Data Set
