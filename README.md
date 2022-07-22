@@ -85,7 +85,8 @@ colData(airway)
 
 ## Source Code for Hands-on session
 
-An R script with commands for step wise differential expression analysis using DESeq2 package is saved in the *"./src"* directory
+An R script with commands for step wise differential expression analysis using DESeq2 package is saved in the *"./src"* directory.
 
-```{"./src/DESeq2.R"}
+```{r}
+"./src/DESeq2.R"
 ```
