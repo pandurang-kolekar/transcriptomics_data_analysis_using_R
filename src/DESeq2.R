@@ -166,12 +166,12 @@ str(sigDf)
 ## Up-regulated genes 
 
 sigDf %>% filter(log2FoldChange > 2) %>% 
-  select(gene) %>% 
+  dplyr::select(gene) %>% 
   write.table(., file = "upGene.tsv", row.names = FALSE)
 
 ## Down-regulated genes 
 
-sigDf %>% filter(log2FoldChange < 2) %>% 
-  select(gene) %>% 
+sigDf %>% filter(log2FoldChange < -2) %>% 
+  dplyr::select(gene) %>% 
   write.table(., file = "downGene.tsv", row.names = FALSE)
 
